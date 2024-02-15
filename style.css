@@ -13,3 +13,57 @@ header{
     justify-content: left ;
     align-items: flex-start;
 }
+aside {
+    width: 300px;
+    min-height: 400px;
+    padding-left: 40px;
+    font-style: raleway;
+    background-color: #e7c7c4 ;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    float: right;
+    margin: 10px;
+
+  }
+
+  .texto-buscador{
+    padding-left: 5%;
+    padding-right: 5%;
+    
+  }
+  
+  .buscador{
+    padding-left: 3%;
+    padding-right: 1%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    border-radius: 10%;
+  }
+
+  .logo{
+    padding-bottom: 4%;
+    padding-top: 3%;
+    padding-left: 10%;
+  }
+  h2{
+    font-weight:700;
+    padding-bottom: 7%;
+  }
+  
+  .perfil-opciones{
+    padding-left: 10%;
+  }
+
+  .opciones-usuario{
+    padding-left: 10%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+  }
+  
+  .usuario{
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+  }
+

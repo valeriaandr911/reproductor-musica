@@ -2,7 +2,7 @@ axios.get('https://leonardoapi.onrender.com/songs')
 
     .then((res) => {
         
-        res.data.songs.map( (song) => {
+        res.data.songs.map((song) => {
             let div = document.createElement('div')
             div.classList.add('flex', 'items-center')
 
@@ -11,6 +11,7 @@ axios.get('https://leonardoapi.onrender.com/songs')
                 <img src="${song.path.front}" alt="" class="h-16">
                 <div>
                     <p>${song.title}</p>
+        
                 </div> 
             `            
          div.addEventListener('click',()=>{
@@ -18,7 +19,8 @@ axios.get('https://leonardoapi.onrender.com/songs')
             document.getElementById('current-song-audio').setAttribute('src',song.path.audio)
          })    
             
-            document.getElementById('track-list').appendChild(div)
+            document.getElementById('track-list').appendChild(div) 
 
         })
+        
     })

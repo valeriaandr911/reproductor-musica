@@ -28,26 +28,27 @@
 <body>
     <header class="header">
         <div class="logo">
-            <img src="/imagenes/logo (1).jpg" alt="descriocion visual de la pagina">
+            <img src="/imagenes/Group.png" alt="descriocion visual de la pagina">
         </div>
-            <form action="/" method="get">
-                <input type="search" placeholder="Encuentra alrededor de 100.000+ canciones y artistas" size="50%">
-                
-                <button type="submit"></button>
-            </form>
-        <nav>
-            <ul class="nav-links">
-                <li><img src="/imagenes/opciones.svg" alt=""></li>
-                <li><img src="/imagenes/perfil.svg" alt=""></li>
-            </ul>
-
-
-        </nav>
         
+        <form class="buscador" action="/" method="get">
+            <input type="search" placeholder ="Encuentra alrededor de 100.000+ canciones y artistas" class="texto-buscador" size="50%">
+                
+            <button type="submit"></button>
+        </form>
+
+        <div class="opciones-usuario">
+            <img src="/imagenes/opciones.svg" alt="opciones del usuario">
+
+        </div>
+
+        <div class="usuario">
+            <img src="/imagenes/perfil.svg" alt="usuario">
+        </div>
+
     </header>
 
     <main class="flex">
-
         <!-- Cancion actual -->
         <section>
             <img src="/logo.png" alt="">
@@ -57,11 +58,18 @@
             <audio src="" controls id="current-song-audio" autoplay></audio>
         </section>
 
+        <aside>
+            <!-- Lista de canciones -->
+            <h2>Mis canciones favoritas</h2>
+            <section class="w-full" id="track-list"></section>
+            
+            <script src="/codigo.js"></script>
+        </aside>
 
-        <!-- Lista de canciones -->
-        <section class="w-full" id="track-list"></section>
+
     </main>
-    <script src="/script.js"></script>
+
+       
 </body>
 
 </html>
