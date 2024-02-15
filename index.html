@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="musica, canciones, reproductor, online">
+
+    <meta name="description" content="Reproductor de musica gratis para todo publico">
+
+    <meta name="author" content="Valeria Ramos">
+
+    <link rel="icon" href="/imagenes/logo (1).jpg">
+
+    <link rel="stylesheet" href="/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>TuMusica</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="head"> 
+            
+                <img src="/imagenes/logo (1).jpg" alt="descripcion grafica de la empresa">
+       
+           
+                <form action="../../form-result.php" method="post" target="_blanck">
+                
+                    <input type="search" 
+                    name="busqueda-de-musica" 
+                    placeholder="Encuentra alrededor de 100.000+ canciones y artistas"
+                    size="50">
+                    
+                    <button type="submit"></button>
+               
+          
+                </form>
+               
+                <ul class="perfil y opciones">
+                <li><img src="/imagenes/opciones.svg" alt="opciones" width="24px" height="24px"></li>
+                <li><img src="/imagenes/perfil.svg" alt="perfil" width="24px" height="24px"></li>
+                </ul>
+            
+            </section>
+        </nav>
+    </header>
+
+    <main class="flex">
+
+        <!-- Cancion actual -->
+        <section>
+            <img src="/logo.png" alt="">
+            <h3>Titulo de la cancion</h3>
+            <p>Album de la cancion</p>
+
+            <audio src="" controls id="current-song-audio" autoplay></audio>
+        </section>
+
+
+        <!-- Lista de canciones -->
+        <section class="w-full" id="track-list"></section>
+    </main>
+    <script src="/codigo.js"></script>
+</body>
+
+</html>
