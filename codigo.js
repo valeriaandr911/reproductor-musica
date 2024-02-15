@@ -1,8 +1,8 @@
-axios.get('https://leonardoapi.onrender.com/music')
+axios.get('https://leonardoapi.onrender.com/songs')
 
     .then((res) => {
         
-        res.data.songs.map((song) => {
+        res.data.songs.map( (song) => {
             let div = document.createElement('div')
             div.classList.add('flex', 'items-center')
 

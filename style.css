@@ -1,0 +1,15 @@
+@font-face {
+    font-family: raleway;
+    src: url(/fonts/Raleway-VariableFont_wght.ttf);
+}
+
+body{
+    font-family: raleway;
+    background-color: #f2f2f2;
+}
+
+header{
+    display: flex;
+    justify-content: left ;
+    align-items: flex-start;
+}
